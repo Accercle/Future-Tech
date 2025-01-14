@@ -400,6 +400,11 @@ a[class] {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (width <= 90.06125rem) {
+  .icon::after {
+    --size: 1.25rem;
+  }
+}
 .icon--yellow-arrow::after {
   background-image: url("../../icons/arrow-top-right_yellow.svg");
 }
@@ -418,6 +423,13 @@ a[class] {
   background-color: var(--color-dark);
   border: var(--border);
   border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .button {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+  }
 }
 @media (any-hover: hover) {
   .button:hover {
@@ -466,9 +478,19 @@ a[class] {
   align-items: center;
   column-gap: 1rem;
 }
+@media (width <= 90.06125rem) {
+  .header__menu-list {
+    column-gap: 0.375rem;
+  }
+}
 .header__menu-link {
   padding: 0.875rem 1.5rem;
   color: var(--color-gray-50);
+}
+@media (width <= 90.06125rem) {
+  .header__menu-link {
+    padding: 0.625rem 1.125rem;
+  }
 }
 .header__menu-link.is-active {
   color: var(--color-light);

@@ -30,11 +30,19 @@
             display: flex;
             align-items: center;
             column-gap: rem(16);
+
+            @include laptop {
+                column-gap: rem(6);
+            }
         }
 
         &-link {
             padding: rem(14) rem(24);
             color: var(--color-gray-50);
+
+            @include laptop {
+                padding: rem(10) rem(18);
+            }
 
             &.is-active {
                 color: var(--color-light);

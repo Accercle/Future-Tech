@@ -1,6 +1,12 @@
 /**
   Нормализация блочной модели
  */
+html,
+body {
+    overflow-x: hidden;
+}
+
+
  *,
  ::before,
  ::after {

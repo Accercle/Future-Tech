@@ -8,7 +8,7 @@
     <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-js-header>
         <div class="header__promo">
             <div class="header__promo-inner container">
                 <a href="/" class="header__promo-link">
@@ -16,7 +16,7 @@
                 </a>
             </div>
         </div>
-        <div class="header__body">
+        <div class="header__body" data-js-header-overlay>
             <div class="header__body-inner container">
                 <a 
                     href="/" 
@@ -55,6 +55,7 @@
                     type="button"
                     aria-label="Open menu"
                     title="Open menu"
+                    data-js-header-burger-button
                 >
                     <span class="burger-button__line"></span>
                     <span class="burger-button__line"></span>

@@ -694,7 +694,6 @@ button[aria-label]::before {
   .footer__menu {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2.5rem;
-    padding-inline: 0.9375rem;
   }
 }
 @media (width <= 63.99875rem) and (width <= 47.99875rem) {

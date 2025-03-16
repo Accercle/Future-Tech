@@ -1,1 +1,38 @@
 @use '../helpers' as *;
+
+.advantage-card {
+    display: grid;
+    row-gap: rem(30);
+
+    &__link {
+        --circleSizy: #{rem(52)};
+        --circleMarginLeft: #{rem(20)};
+
+        position: relative;
+        display: grid;
+        row-gap: rem(4);
+        padding-right: calc(var(--circleSizy) + var(--circleMarginLeft));
+
+        &::after {
+            @include abs-y;
+
+            content: '';
+            display: inline-block;
+            width: rem(52);
+            height: rem(52);
+            right: 0;
+            background: 
+                url('../../icons/arrow-top-right_black.svg') center no-repeat
+                var(--color-accent);
+            border-radius: 50%;
+
+        }
+    }
+
+    &__details {
+        @include fluid-text(20, 14);
+
+        color: var(--color-gray-60);
+        font-family: var(--font-family-accent);
+    }
+}

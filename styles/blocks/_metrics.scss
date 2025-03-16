@@ -1,1 +1,27 @@
 @use '../helpers' as *;
+
+.metrics {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: rem(10);
+        padding: rem(50);
+    }
+
+    &__key {
+        color: var(--color-gray-60);
+    }
+
+    &__value {
+        font-weight: 600;
+    }
+
+    &__sign {
+        color: var(--color-accent);
+    }
+}

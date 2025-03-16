@@ -11,6 +11,28 @@
         flex-direction: column-reverse;
         row-gap: rem(10);
         padding: rem(50);
+
+        @include laptop {
+            padding: rem(30) rem(40);
+            row-gap: rem(2);
+        }
+
+        @include tablet {
+            row-gap: 0;
+            padding: rem(20);
+
+            &:last-child {
+                justify-content: flex-end;
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:not(:last-child) {
+            border-right: var(--border);
+        }
     }
 
     &__key {

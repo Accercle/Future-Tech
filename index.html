@@ -6,10 +6,10 @@
     content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Future Tech | Home</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="./scripts/main.js" type="module" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-js-header> 
         <div class="header__promo">
             <div class="header__promo-inner container">
                 <a href="" class="header__promo-link ">
@@ -32,7 +32,7 @@
                         width="179" height="50"
                     >
                 </a>
-                <div class="header__overlay is-active">
+                <div class="header__overlay" data-js-header-overlay>
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
@@ -55,6 +55,7 @@
                     class="header__burger-button burger-button visible-mobile"
                     aria-label="Open menu"
                     title="Open menu"
+                    data-js-header-burger-button
                 >
                     <span class="burger-button__line"></span>
                     <span class="burger-button__line"></span>

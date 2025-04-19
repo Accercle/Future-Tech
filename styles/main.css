@@ -529,7 +529,7 @@ button[aria-label]::before {
 }
 .burger-button.is-active .burger-button__line:first-child {
   rotate: 45deg;
-  translate: 0.05em 0.45em;
+  translate: 0.05em 0.5em;
 }
 .burger-button.is-active .burger-button__line:nth-child(2) {
   rotate: -45deg;

@@ -239,7 +239,11 @@ svg * {
   font-display: swap;
 }
 :root {
+<<<<<<< feat/component-header
   --color-light: #FFFFFF;
+=======
+  --color-ligh: #FFFFFF;
+>>>>>>> main
   --color-dark: #141414;
   --color-dark-10: #1A1A1A;
   --color-dark-15: #262626;
@@ -288,7 +292,11 @@ svg * {
 }
 
 @media (width > 47.99875rem) {
+<<<<<<< feat/component-header
   .visible-mobile {
+=======
+  .visually-mobile {
+>>>>>>> main
     display: none !important;
   }
 }
@@ -381,6 +389,7 @@ a[class] {
   outline-offset: 0.25rem;
   transition-duration: 0s !important;
 }
+<<<<<<< feat/component-header
 
 a[aria-label],
 button[aria-label] {
@@ -599,5 +608,7 @@ button[aria-label]::before {
     align-self: center;
   }
 }
+=======
+>>>>>>> main
 
 /*# sourceMappingURL=main.css.map */

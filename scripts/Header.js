@@ -2,7 +2,7 @@ class Header {
   selectors = {
     root: '[data-js-header]',
     overlay: '[data-js-header-overlay]',
-    burgerButton: '[data-js-header-burger-button]'
+    burgerButton: '[data-js-header-burger-button]',
   }
 
   stateClasses = {
@@ -20,12 +20,11 @@ class Header {
   onBurgerButtonClick = () => {
     this.burgerButtonElement.classList.toggle(this.stateClasses.isActive)
     this.overlayElement.classList.toggle(this.stateClasses.isActive)
-
     document.documentElement.classList.toggle(this.stateClasses.isLock)
   }
 
   bindEvents() {
-    this.burgerButton.addEventListener('click', this.onBurgerButtonClick)
+    this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
   }
 }
 

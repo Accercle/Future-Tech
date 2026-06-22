@@ -348,7 +348,7 @@ svg * {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("../../icons/arrow-top-right-black.svg") center no-repeat var(--color-accent);
+  background: url("../icons/arrow-top-right-black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
 
@@ -487,10 +487,10 @@ button[aria-label]::before {
   }
 }
 .icon--yellow-arrow::after {
-  background-image: url("../../icons/arrow-top-right-yellow.svg");
+  background-image: url("../icons/arrow-top-right-yellow.svg");
 }
 .icon--yellow-eye::after {
-  background-image: url("../../icons/eye-yellow.svg");
+  background-image: url("../icons/eye-yellow.svg");
 }
 
 .logo {
@@ -946,7 +946,7 @@ button[aria-label]::before {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("../../icons/arrow-top-right-black.svg") center no-repeat var(--color-accent);
+  background: url("../icons/arrow-top-right-black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
 .advantage-card__details {
@@ -1551,10 +1551,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url("../../icons/star_gray.svg") center/contain no-repeat;
+  background: url("../icons/star_gray.svg") center/contain no-repeat;
 }
 .rating-view__star.is-active {
-  background-image: url("../../icons/star_yellow.svg");
+  background-image: url("../icons/star_yellow.svg");
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
@@ -1605,6 +1605,8 @@ button[aria-label]::before {
 }
 .about-card__title {
   font-size: clamp(1rem, 0.9044117647rem + 0.3921568627vw, 1.375rem);
+  display: flex;
+  align-items: center;
   font-family: var(--font-family-base);
   font-weight: 600;
 }
